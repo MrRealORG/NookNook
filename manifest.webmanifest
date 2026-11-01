@@ -1,0 +1,33 @@
+{
+  "name": "NookNook \u2014 Offline Notes App for Windows",
+  "short_name": "NookNook",
+  "description": "A cozy 100% offline notes desk for Windows: markdown notes, tasks, kanban board, recorder and AI chat with your own key.",
+  "start_url": "https://mrrealorg.github.io/NookNook/",
+  "scope": "https://mrrealorg.github.io/NookNook/",
+  "display": "browser",
+  "background_color": "#faf6ee",
+  "theme_color": "#bfe0fa",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ]
+}

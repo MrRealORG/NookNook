@@ -11,7 +11,8 @@
 <meta name="theme-color" content="#bfe0fa"/>
 <link rel="canonical" href="https://mrrealorg.github.io/NookNook/"/>
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
-<link rel="apple-touch-icon" href="assets/icon-192.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png"/>
+<link rel="manifest" href="/NookNook/manifest.webmanifest"/>
 <link rel="preload" as="image" href="assets/shot-notes.webp" fetchpriority="high"/>
 
 <!-- Open Graph -->
@@ -24,6 +25,8 @@
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:alt" content="The NookNook app icon and a real screenshot of the editor on a sky with clouds"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:locale" content="en_US"/>
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="NookNook — Notes that feel like home"/>
@@ -37,12 +40,32 @@
   "name": "NookNook",
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "ProductivityApplication",
+  "applicationSuite": "Notes, Tasks and Projects",
   "softwareVersion": "0.20.0",
   "fileSize": "2.1MB",
+  "isAccessibleForFree": true,
   "downloadUrl": "https://github.com/MrRealORG/NookNook/releases/latest",
+  "releaseNotes": "https://mrrealorg.github.io/NookNook/#changelog",
+  "screenshot": [
+    "https://mrrealorg.github.io/NookNook/assets/shot-notes.webp",
+    "https://mrrealorg.github.io/NookNook/assets/shot-board.webp",
+    "https://mrrealorg.github.io/NookNook/assets/shot-tasks.webp"
+  ],
+  "featureList": [
+    "Markdown notes with live preview",
+    "Tasks with reminders and repeats",
+    "Kanban board with labels and due dates",
+    "Offline meeting recorder (saves .wav)",
+    "Insights with day streak and 14-day activity chart",
+    "AI chat with your own API key",
+    "Wiki-links with backlinks and templates",
+    "24 themes, single-file backup, HTML export"
+  ],
+  "keywords": "offline notes app, windows notes app, markdown editor, kanban board, local-first, private notes, journal app",
   "description": "A cozy 100% offline notes desk for Windows: markdown notes, tasks with reminders, a kanban board, meeting recorder, insights and AI chat with your own key. Local SQLite, no accounts, no cloud.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": { "@type": "Person", "name": "Mr Real" },
+  "sameAs": "https://github.com/MrRealORG/Nook",
   "license": "https://github.com/MrRealORG/Nook/blob/master/LICENSE"
 }
 </script>
@@ -52,10 +75,12 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Does NookNook work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely. Notes, tasks, the board, the recorder and insights all run on your PC with no internet. The only optional online feature is AI chat, and it uses your own API key." } },
-    { "@type": "Question", "name": "Is the installer really only 2 MB?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. NookNook is built on Tauri 2 with native Rust, so it uses the fast webview already on Windows. The installer is about 2 MB and the app stays light on memory." } },
+    { "@type": "Question", "name": "Is the installer really only 2 MB?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. NookNook is built on Tauri 2 with a native Rust core, so it uses the fast webview already on Windows. The installer is about 2 MB and the app stays light on memory." } },
     { "@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": { "@type": "Answer", "text": "In a local SQLite database inside your own user folder on this PC. Nothing syncs anywhere. You can also back up to a single file or export notes as a self-contained web page." } },
     { "@type": "Question", "name": "Do I need an account?", "acceptedAnswer": { "@type": "Answer", "text": "No accounts, no sign-up, no tracking. Install, pick your name and a theme, start writing." } },
     { "@type": "Question", "name": "How does the AI chat work?", "acceptedAnswer": { "@type": "Answer", "text": "You connect your own provider — OpenRouter, Z.ai, OpenAI, Groq, Gemini, DeepSeek, Ollama or LM Studio — and your key stays on this PC. Chat can even read the note you have open as context." } },
+    { "@type": "Question", "name": "Which Windows versions are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Windows 10 and Windows 11 on x64. No administrator rights are needed to install it." } },
+    { "@type": "Question", "name": "How do I back up my notes?", "acceptedAnswer": { "@type": "Answer", "text": "Everything lives in one local SQLite file, so backup is copying a single file. You can also export any note as a self-contained HTML page that opens in any browser." } },
     { "@type": "Question", "name": "Is NookNook free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, free and open source under the MIT license." } }
   ]
 }
