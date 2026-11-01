@@ -12,6 +12,7 @@
 <link rel="canonical" href="https://mrrealorg.github.io/NookNook/"/>
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 <link rel="apple-touch-icon" href="assets/icon-192.png"/>
+<link rel="preload" as="image" href="assets/shot-notes.webp" fetchpriority="high"/>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
@@ -447,7 +448,7 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
 <nav class="nav" id="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="NookNook home">
-      <img src="assets/icon.png" alt="NookNook app icon"/>
+      <img src="assets/icon.webp" alt="NookNook app icon" width="28" height="28"/>
       Nook<b>Nook</b>
     </a>
     <div class="nav-links">
@@ -497,7 +498,7 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
 
     <div class="hero-shot">
       <div class="shot-card">
-        <img src="assets/shot-notes.png" alt="NookNook editor showing a rendered welcome note with checkboxes, tags and folders, in the light Cloud Nine theme" width="1440" height="900"/>
+        <img src="assets/shot-notes.webp" alt="NookNook editor showing a rendered welcome note with checkboxes, tags and folders, in the light Cloud Nine theme" width="1440" height="900" fetchpriority="high" decoding="async"/>
       </div>
       <span class="shot-tag">real screenshot — v0.20</span>
       <div class="float-note" aria-hidden="true">17:30 — chai + walk</div>
@@ -637,23 +638,23 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
 
     <div class="gallery">
       <figure class="wide rv">
-        <img src="assets/shot-notes.png" alt="Editor with a rendered welcome note, note list with tags, folders and profile chip in the light Cloud Nine theme" loading="lazy" width="1440" height="900"/>
+        <img src="assets/shot-notes.webp" alt="Editor with a rendered welcome note, note list with tags, folders and profile chip in the light Cloud Nine theme" loading="lazy" decoding="async" width="1440" height="900"/>
         <figcaption><span class="gcap-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>Editor — markdown, live preview, tabs &amp; tags <small>Cloud Nine theme</small></figcaption>
       </figure>
       <figure class="rv">
-        <img src="assets/shot-board.png" alt="Kanban board with nine cards, colored labels, due chips and progress bars across three columns" loading="lazy" width="1440" height="900"/>
+        <img src="assets/shot-board.webp" alt="Kanban board with nine cards, colored labels, due chips and progress bars across three columns" loading="lazy" decoding="async" width="1440" height="900"/>
         <figcaption><span class="gcap-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><rect x="3" y="3" width="5" height="14" rx="1.5"/><rect x="10" y="3" width="5" height="9" rx="1.5"/><rect x="17" y="3" width="5" height="17" rx="1.5"/></svg></span>Board — drag, label, done <small>9 cards live</small></figcaption>
       </figure>
       <figure class="rv">
-        <img src="assets/shot-chat.png" alt="AI chat with a two-turn conversation, provider chip Z.ai GLM-4.6 and local-keys notice in the dark Cozy Midnight theme" loading="lazy" width="1440" height="900"/>
+        <img src="assets/shot-chat.webp" alt="AI chat with a two-turn conversation, provider chip Z.ai GLM-4.6 and local-keys notice in the dark Cozy Midnight theme" loading="lazy" decoding="async" width="1440" height="900"/>
         <figcaption><span class="gcap-ico"><svg width="14" height="14" viewBox="0 0 24 24"><use href="#ic-spark"/></svg></span>AI Chat — your own key <small>Cozy Midnight theme</small></figcaption>
       </figure>
       <figure class="rv">
-        <img src="assets/shot-tasks.png" alt="Tasks view with progress bar, filter chips and tasks showing labels, due dates and repeats" loading="lazy" width="1440" height="900"/>
+        <img src="assets/shot-tasks.webp" alt="Tasks view with progress bar, filter chips and tasks showing labels, due dates and repeats" loading="lazy" decoding="async" width="1440" height="900"/>
         <figcaption><span class="gcap-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M9 16l2 2 4-4"/></svg></span>Tasks — reminders &amp; repeats <small>progress built in</small></figcaption>
       </figure>
       <figure class="rv">
-        <img src="assets/shot-insights.png" alt="Insights view with stat cards, a 14-day activity chart, top tags and board progress in the Forest Night theme" loading="lazy" width="1440" height="900"/>
+        <img src="assets/shot-insights.webp" alt="Insights view with stat cards, a 14-day activity chart, top tags and board progress in the Forest Night theme" loading="lazy" decoding="async" width="1440" height="900"/>
         <figcaption><span class="gcap-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Insights — streaks &amp; activity <small>Forest Night theme</small></figcaption>
       </figure>
     </div>
@@ -776,7 +777,7 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
     <span class="kicker rv">Get the app</span>
     <h2 class="rv">Bring NookNook home</h2>
     <div class="dl-card rv">
-      <img class="dl-icon" src="assets/icon.png" alt="NookNook Windows app icon" width="130" height="130"/>
+      <img class="dl-icon" src="assets/icon.webp" alt="NookNook Windows app icon" width="130" height="130" loading="lazy" decoding="async"/>
       <div>
         <span class="dl-ver"><i></i>v0.20.0 — latest release</span>
         <h2>NookNook for Windows</h2>
@@ -848,7 +849,7 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="foot-brand" href="#top"><img src="assets/icon.png" alt="NookNook icon"/> Nook<b>Nook</b></a>
+        <a class="foot-brand" href="#top"><img src="assets/icon.webp" alt="NookNook icon" width="28" height="28" loading="lazy"/> Nook<b>Nook</b></a>
         <p style="margin-top:14px; max-width:300px; font-size:14px">Your cozy corner for notes, tasks and ideas — on your own PC, in your own control.</p>
       </div>
       <div class="foot-links">
@@ -878,7 +879,7 @@ footer{background:var(--ink); color:#b9ae97; margin-top:96px; padding:56px 0 34p
 
 <!-- lightbox -->
 <div class="lb" id="lb" role="dialog" aria-label="Screenshot viewer">
-  <img id="lb-img" src="assets/shot-notes.png" alt="NookNook screenshot enlarged"/>
+  <img id="lb-img" alt="NookNook screenshot enlarged"/>
 </div>
 
 <script>
