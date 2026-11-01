@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NookNook Changelog — every release, every date</title>
+<meta name="description" content="Full NookNook release history: markdown notes, tasks, kanban board, meeting recorder, themes, command palette and more. A fresh drop of improvements almost daily, all offline."/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#bfe0fa"/>
+<link rel="canonical" href="https://mrrealorg.github.io/NookNook/changelog.html"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="NookNook"/>
+<meta property="og:url" content="https://mrrealorg.github.io/NookNook/changelog.html"/>
+<meta property="og:title" content="NookNook Changelog — every release, every date"/>
+<meta property="og:description" content="Real releases, real dates, no vaporware. Follow the full history of the cozy 100% offline notes desk for Windows."/>
+<meta property="og:image" content="https://mrrealorg.github.io/NookNook/assets/og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="NookNook Changelog — every release, every date"/>
+<meta name="twitter:description" content="Real releases, real dates, no vaporware. The full history of the offline notes desk for Windows."/>
+<meta name="twitter:image" content="https://mrrealorg.github.io/NookNook/assets/og.png"/>
+<style>
+:root{
+  --paper:#faf6ee; --card:#ffffff; --ink:#2b2620; --dim:#6f6656; --faint:#a09581;
+  --blue:#3b82c4; --blue-deep:#2d6ba3; --line:#e8e0cf; --r:20px;
+  --shadow:0 10px 30px -12px rgba(80,60,30,.22);
+}
+*{box-sizing:border-box; margin:0; padding:0}
+body{font-family:-apple-system,"Segoe UI",system-ui,Roboto,"Noto Sans",sans-serif; background:var(--paper); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased}
+a{color:var(--blue); text-decoration:none}
+.wrap{max-width:880px; margin:0 auto; padding:0 24px}
+h1,h2,h3{font-family:ui-serif,Georgia,"Times New Roman",serif; line-height:1.15; font-weight:700; letter-spacing:-.01em}
+.nav{position:sticky; top:0; z-index:50; background:rgba(250,246,238,.86); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.nav-in{display:flex; align-items:center; gap:10px; padding:14px 0}
+.brand{display:flex; align-items:center; gap:9px; font-weight:800; font-size:17px; color:var(--ink)}
+.brand b{color:var(--blue)}
+.nav-back{margin-left:auto; font-size:14.5px; font-weight:600}
+.hero{padding:64px 0 8px; text-align:center}
+.kicker{display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); margin-bottom:14px}
+.kicker::before{content:""; width:26px; height:2px; background:var(--blue); border-radius:2px}
+.hero h1{font-size:clamp(34px,5vw,52px)}
+.hero .sub{color:var(--dim); font-size:17.5px; max-width:640px; margin:14px auto 0}
+.timeline{margin-top:44px; position:relative; padding-left:30px}
+.timeline::before{content:""; position:absolute; left:8px; top:6px; bottom:6px; width:2px; background:repeating-linear-gradient(180deg,var(--line) 0 8px,transparent 8px 14px)}
+.tl-item{position:relative; padding:0 0 26px 8px}
+.tl-item::before{content:""; position:absolute; left:-28px; top:6px; width:14px; height:14px; border-radius:50%; background:#fff; border:3.5px solid var(--blue)}
+.tl-item:first-child::before{background:var(--blue)}
+.tl-item h3{font-size:18px; display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.tl-item .v{font-family:-apple-system,"Segoe UI",sans-serif; font-size:12px; font-weight:800; color:var(--blue-deep); background:#eaf3fb; border:1px solid #d3e7f8; border-radius:999px; padding:2.5px 10px}
+.tl-item p{color:var(--dim); font-size:14.5px; margin-top:5px; max-width:760px}
+.tl-more{color:var(--faint); font-style:italic; margin-top:4px; font-size:14.5px}
+.cta{text-align:center; margin:56px 0 24px}
+.btn{display:inline-flex; align-items:center; gap:9px; border-radius:14px; padding:12px 24px; font-weight:700; font-size:15px; background:var(--blue); color:#fff; box-shadow:0 8px 22px -8px rgba(59,130,196,.65); transition:transform .15s, background .2s}
+.btn:hover{background:var(--blue-deep); transform:translateY(-1px)}
+footer{border-top:1px solid var(--line); padding:26px 0 40px; color:var(--faint); font-size:13.5px; text-align:center}
+footer a{margin:0 8px}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html"><img src="assets/icon.webp" alt="NookNook app icon" width="28" height="28"/> Nook<b>Nook</b></a>
+    <a class="nav-back" href="index.html">Back to site</a>
+  </div>
+</nav>
+<main class="wrap">
+  <div class="hero">
+    <span class="kicker">Fresh paint, constantly</span>
+    <h1>Changelog</h1>
+    <p class="sub">NookNook improves in small, steady drops — real releases, real dates, no vaporware. Every entry below shipped as a signed-off GitHub release.</p>
+  </div>
+  <div class="timeline">
+      <div class="tl-item rv"><h3><span class="v">v0.20.0</span> Editor quick tools</h3><p>Copy any note as Markdown, ==highlight== marker, insert today's date, collapsible note-list pane (Ctrl+Shift+B), editor font size cycling and a reopen-last-note setting that starts you where you left off.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.19.0</span> A sharper face for the app</h3><p>Brand-new double-N app icon crisp from 16 px to 1024 px, public downloads with checksums, a full README and this website.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.18.0</span> The NookNook rename</h3><p>Nook became NookNook everywhere — installer, titlebar, splash, tray — with a two-tone logo and every note, task and key carried over untouched.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.17.0</span> Command palette &amp; insights</h3><p>Ctrl+K runs actions, jumps to places and switches all 24 themes. New Insights view with streaks, a 14-day chart and top tags. Card details on the board.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.16.0</span> Board, rebuilt</h3><p>Buttery pointer dragging, glass columns, live stats, six label colors, card modals with checklists, and a profile chip with your photo.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.15.0</span> Sound &amp; splash</h3><p>Realistic synthesized sound effects, generative ambient lofi composed live on your PC, a night-sky launch splash, and the AI chat fix that made it all click.</p></div>
+      <div class="tl-item rv"><h3><span class="v">v0.10 &ndash; 0.14</span> The cozy foundation</h3><p>Dreamy onboarding, name personalization, AI chat v2, Zen mode, note templates, HTML export, 24 themes, accent colors, zero emoji UI, the Windows drag fix and a full icon refresh.</p></div>
+    <p class="tl-more">...and a fresh drop of improvements almost daily. The frog never sleeps.</p>
+  </div>
+  <div class="cta">
+    <a class="btn" href="https://github.com/MrRealORG/Nook/releases/latest" target="_blank" rel="noopener">Download the latest release</a>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <a href="index.html">Home</a> &middot; <a href="https://github.com/MrRealORG/Nook" target="_blank" rel="noopener">Source (MIT)</a> &middot; <a href="https://github.com/MrRealORG/Nook/releases" target="_blank" rel="noopener">Releases</a>
+    <div style="margin-top:8px">NookNook — notes that feel like home. 100% offline, 2 MB, zero accounts.</div>
+  </div>
+</footer>
+</body>
+</html>

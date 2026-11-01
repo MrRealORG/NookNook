@@ -1,0 +1,29 @@
+# NookNook
+
+> NookNook is a free, 100% offline note-taking desk for Windows 10 and 11. Rich markdown notes, tasks with reminders, a kanban board, an offline meeting recorder, 24 themes and optional AI chat with your own API key. The installer is about 2 MB, there are no accounts and nothing leaves the PC.
+
+Core facts:
+- Platform: Windows 10 / Windows 11 (native app, Tauri 2 + Rust core)
+- Storage: local SQLite database in the user's own folder; no cloud, no telemetry
+- Size: ~2 MB installer; light on memory
+- License: MIT, open source
+- Price: free
+- Developer: MrRealORG (Mr Real)
+- Latest version: v0.20.0 (see changelog for the full release history)
+
+Key features:
+- Markdown notes with live preview, copy-as-markdown, ==highlight== and quick tools
+- Tasks with reminders, repeats and due dates
+- Kanban board with labels, checklists and live stats
+- Offline meeting recorder that saves .wav files on the PC
+- Insights view with streaks and a 14-day activity chart
+- Command palette (Ctrl+K), Zen mode, note templates, HTML export
+- 24 themes with accent colors
+- AI chat (optional) using the user's own API key
+
+## Links
+- [Website](https://mrrealorg.github.io/NookNook/)
+- [Changelog](https://mrrealorg.github.io/NookNook/changelog.html)
+- [Source code (GitHub, MIT)](https://github.com/MrRealORG/Nook)
+- [Releases / download](https://github.com/MrRealORG/Nook/releases)
+- [Discussions](https://github.com/MrRealORG/Nook/discussions)
